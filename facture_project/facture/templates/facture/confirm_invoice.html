@@ -1,0 +1,7 @@
+<h1>Confirm Invoice</h1>
+<p>Invoice Number: {{ invoice.number }}</p>
+<p>Total Amount: {{ invoice.total_amount }}</p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Confirm</button>
+</form>
